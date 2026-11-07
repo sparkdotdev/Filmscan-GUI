@@ -1,0 +1,32 @@
+# Which rolls were shot alongside which. Paths are under each trip's
+# "Original TIFFs" folder.
+
+Alps 2026:
+  Zurich:
+    correct:
+      - Zurich/10001 Lucky SHD 400
+      - Zurich/10002 Ilford Harman Phoenix     # same day as 10010
+    siblings:
+      - Zurich/10010 FujiFilm Superia 200
+      - Zurich/10011 FujiFilm Superia 200
+    # A roll listed here is matched to these instead.
+    siblings_for:
+      Zurich/10002 Ilford Harman Phoenix:     # same day as 10010
+        - Zurich/10010 FujiFilm Superia 200
+  Lausanne:
+    correct:
+      - Lausanne/10003 Ilford Harman Phoenix
+    siblings:
+      - Lausanne/10012 FujiFilm Superia 400/0000[5-7]*  # the city shots
+    # Paler sky, so less of the match.
+    strength:
+      Lausanne/10003 Ilford Harman Phoenix: 0.6
+  Lugano:
+    correct:
+      - Lugano/10004 Ilford Harman Phoenix
+    siblings:
+      - Lugano/10013 FujiFilm Superia 400
+      # 10014's two frames are left out: they would count as much as 36.
+
+Coast 2026: {}
+  # No colour roll was shot alongside.

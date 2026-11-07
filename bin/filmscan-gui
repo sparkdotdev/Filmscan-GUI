@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+# Opens the app. Settings live in the platform's settings folder, or in the
+# file FILMSCAN_GUI_CONFIG names.
+RubyVM::YJIT.enable if defined?(RubyVM::YJIT.enable)
+
+require_relative "../lib/filmscan_gui"
+
+FilmscanGUI.run
